@@ -90,6 +90,7 @@ class Agent(BaseAgent):
         next_states, dones를 임의로 가져와서 build_loss에서 만든대로 학습.
     '''
     if self.epsilon > self.eps_end:
+      print('decay')
       self.epsilon -= self.eps_decay                                            
     
     states, actions, rewards, next_states, dones = \

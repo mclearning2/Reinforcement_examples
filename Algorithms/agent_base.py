@@ -58,7 +58,7 @@ class BaseAgent(metaclass=ABCMeta):
     self.dirs         = dirs
     self.option       = option
   
-  def _set_logger(self, filename, 
+  def _generate_logger(self, filename, 
                         maxBytes=1024 * 1024 * 10, #10MB
                         backupCount=10):
     logger = logging.getLogger()

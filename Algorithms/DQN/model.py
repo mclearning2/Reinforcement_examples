@@ -143,7 +143,7 @@ class DQNNetwork:
       q_one_hot = tf.one_hot(self.argmax_q, output_size)
       target_q  = tf.reduce_sum(self.t_q * q_one_hot, axis=1)
 
-      # (done) target = (learner DQN이 행동한) target_Q * γ + reward
+      # (done) target = (learner DQN의 max) target_Q * γ + reward
       # (not done) target = reward
       target = tf.cast(1-self.dones, tf.float32) * target_q * discount_factor \
               + self.rewards
