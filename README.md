@@ -71,10 +71,6 @@ tensorboard --logdir=[Debug 폴더명]\summary
 
 만약 가중치를 복원해서 학습하고 싶다면 folder_set에서 restore를 사용한다. 하지만 memory 저장은 안했기 때문에 학습을 다시하는 게 잘 안되므로 (앞으로 구현해야하겠지만) 안하는 것을 추천
 
-## Algorithms
-
-- [DQN (Deep Q Network)](https://github.com/mclearning2/Reinforement_examples/tree/master/Algorithms/DQN)
-- A3C (Asynchronous Actor-Critic Agents) (진행중)
 
 ## Reference
 - https://github.com/dennybritz/reinforcement-learning
